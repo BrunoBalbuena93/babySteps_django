@@ -1,0 +1,32 @@
+body{
+    color: whitesmoke;
+    font-family: "Poppins";
+    text-align: center;
+    background-color: #0c2d3c;
+    border: 30px solid #48A382;
+    border-top: 0px;
+    margin: 0px;
+}
+
+p{
+    padding: 5% 20% 0%  20%;
+    margin: auto;
+}
+
+form{
+    font-size: 1.5em;
+    margin: auto;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    color: black;
+    background-color: #b59c40;
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    margin: 8px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}

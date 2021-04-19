@@ -1,0 +1,21 @@
+{% extends "das_app/das_app_base.html" %}
+
+{% block title %}
+<title>Registrar escuela</title>  
+{% endblock title %}
+
+{% block body_block %}
+<h1>
+    {% if not form.instance.pk %}
+    Crea una escuela
+    {% else %}
+    Actualizar escuela      
+    {% endif %}
+</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-primary" name="" id="" value="Registrar">
+</form>
+
+{% endblock body_block %}

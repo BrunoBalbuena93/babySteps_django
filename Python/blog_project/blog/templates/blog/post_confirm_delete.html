@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+
+{% block title %}
+    <title>Eliminar</title>
+{% endblock title %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        <p>Estas seguro que quieres borrar {{object}} ?</p>
+        <input type="submit" class="btn btn-danger" value="Confirmar">
+    </form>
+{% endblock content %}

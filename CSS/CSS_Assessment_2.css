@@ -1,0 +1,32 @@
+/*Seteando la fuente al body, pues ninguna otra tiene otro valor*/
+body{
+    font-family: "Poppins";
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+td{
+    border: 6px solid white;
+    height: 200px;
+    width: 100px;
+}
+#one{
+    background-color: #0c2d3c;
+}
+#two{
+    background-color: #0d1015;
+}
+#three{
+    background-color: #48A382;
+}
+
+#four{
+    background-color: #B59C40;
+}
+#five{
+    background-color: #61491D;
+}

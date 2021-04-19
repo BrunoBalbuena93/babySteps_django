@@ -1,0 +1,46 @@
+/*
+Comenzando con CSS
+Se llaman las etiquetas de html tal cual, dichas etiquetas
+se pueden editar o utilizar las divisiones.
+Cuando se llama a una tag se hace en todas las tags
+*/
+h1  tagname
+{
+    color: palegreen;
+}
+
+body
+{
+    background-color: cadetblue;
+}
+.firstDiv{
+    color: blue;
+}
+.secondDiv{
+    color: red;
+}
+#singleLine{
+    color: green;
+    text-decoration: line-through;
+}
+h3 + ul{
+    border: 4px dotted plum;
+}
+
+li a{
+    color: greenyellow
+}
+li a[href="www.flickr.com"]{
+    color: gray;
+}
+
+h4 + ul{
+    color: crimson;
+}
+.topItems{
+    color: navy;
+}
+
+#two{
+    border: 2px solid black;
+}

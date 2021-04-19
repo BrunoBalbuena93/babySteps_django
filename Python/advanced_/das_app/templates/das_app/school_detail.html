@@ -1,0 +1,24 @@
+{% extends "das_app/das_app_base.html" %}
+
+{% block title %}
+<title>Detalles</title>  
+{% endblock title %}
+
+{% block body_block %}
+<div class="jumbotron">
+    <h1>Página de detalles de las escuelas</h1>
+    <h2>Detalles:</h2>
+    <p>{{ school_detail.name }}</p>
+    <p>Principal: {{ school_detail.principal }}</p>
+    <p>Localización: {{ school_detail.location }}</p>
+    <h3>Estudiantes:</h3>
+    {% for student in school_detail.students.all %}
+        <p>{{student.name}}, que tiene {{student.age}} años de edad</p>
+    {% endfor %}
+</div>
+<!-- Aqui ponemos la parte del update -->
+<div class="container">
+    <p><a class ="btn btn-warning" href="{% url 'das_app:update' pk=school_detail.pk %}">Actualizar</a></p>
+</div>
+  
+{% endblock body_block %}
